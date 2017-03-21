@@ -6,11 +6,17 @@ namespace Codewars_AvoidObstacles
     [TestClass]
     public class UnitTest1
     {
+        //Constraints: 1 ≤ inputArray[i] ≤ 100.
         [TestMethod]
         public void Obstacles_are_1_min_legnth_should_be_2()
         {
             var arr = new int[] { 1 };
-            Assert.AreEqual(2, new Kata().AvoidObstacles(arr));
+            MinimalLengthOfJumpShouldBe(arr, 2);
+        }
+
+        private static void MinimalLengthOfJumpShouldBe(int[] arr, int expected)
+        {
+            Assert.AreEqual(expected, new Kata().AvoidObstacles(arr));
         }
     }
 
