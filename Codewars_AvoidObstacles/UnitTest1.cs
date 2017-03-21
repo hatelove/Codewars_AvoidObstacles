@@ -1,5 +1,5 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Linq;
 
 namespace Codewars_AvoidObstacles
 {
@@ -18,8 +18,7 @@ namespace Codewars_AvoidObstacles
     {
         public int AvoidObstacles(int[] arr)
         {
-
-            throw new NotImplementedException();
+            return arr.Max() + 1;
         }
     }
 }
